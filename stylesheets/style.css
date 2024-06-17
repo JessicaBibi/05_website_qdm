@@ -40,6 +40,31 @@
 
     --police: "Inter", sans-serif;
 
+/* RESPONSIVE - media queries */
+
+
+@media  (max-width: 1024px) {
+    .header-nav-accueil{
+        flex-direction: column;
+    }
+    .story{
+        flex-direction: column;
+        align-items: center;
+    }
+    .texte-story{
+        width: 60vw;
+    }
+
+    .engage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .engage-items{
+
+    }
+
+}
+
 }
 body{
     font-family: var(--police);
@@ -52,6 +77,7 @@ header{
     background-size: cover;
     min-height: 100vh;
     font-family: var(--police);
+    width: 100%;
 }
 
 .header-nav-accueil{
@@ -231,14 +257,15 @@ h1 {
     font-family: var(--police);
     font-weight: var(--demi-gras);
     color: var(--text-main-color);
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 100px;
+    padding-right: 10vw;
 }
 
 .engage-items{
     text-align: center;
     /* background-color: aqua; */
-    /* padding: 8rem; */
+    padding: 8rem;
 }
 
 .engage h2{
@@ -249,12 +276,12 @@ h1 {
     font-weight: var(--demi-gras);
     color: var(--text-main-color);
     text-align: start;
-
+    margin-right: auto;
 }
 
 .items{
     display: flex;
-    width: 30vw;
+    width: 40vw;
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -299,7 +326,6 @@ h1 {
     flex-direction: column;
     margin: 100px;
     padding-left: 200px;
-    padding-right: 200px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
