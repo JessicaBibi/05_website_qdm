@@ -43,7 +43,8 @@
 /* RESPONSIVE - media queries */
 
 
-@media  (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
+    
     .header-nav-accueil{
         flex-direction: column;
     }
@@ -73,9 +74,47 @@
     .global-container{
         padding-right: 100px;
     }
-
 }
 
+@media screen and (max-width: 1024px) { 
+    .engage h2{
+        margin-bottom: 5px;
+    }
+    .engage{
+        padding: 80px 0;
+    }
+    .items{
+        width: 100vw;
+    }
+    .fav-center{
+        width: 50vw;
+    }
+    .global-container{
+        padding-left: 100px;
+        margin: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .row{
+        flex-direction: column;
+        gap: 0;
+    }
+    .global-container2{
+        margin: 0;
+        padding: 80px;
+    }
+    .parent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .events{
+        width: 100%;
+    }
+    .droite{
+        width: 100%;
+    }
+
+}
 
 
 }
