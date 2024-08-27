@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -6,25 +6,22 @@
     box-sizing: border-box;
 }
 
-/* VARIABLES */
 :root {
-    /* COLORS */
+
     --main-color: #091729;
     --sec-color: #FDE1BD;
     --third-color: #F1AA7C;
     --bg-color: #FFFF;
 
-    /* TYPO COLORS */
     --text-main-color: #091729;
     --text-sec-color: #FFFF;
 
-    /* TYPO */
+
     --text-title-h1:2.35rem;
     --text-title-h2:2.10rem;
     --text-title-h3:1.8rem;
     --text-corps:1.5rem;
-    
-    /* Graisses de texte */
+
 
     --reguliere: 400;
 
@@ -32,11 +29,11 @@
 
     --gras: 800;
 
-/* Interlignage */
+
 
     --interligne: 1.5;
 
-/* Famille de polices */
+
 
     --police: "Inter", sans-serif;
 }
@@ -128,7 +125,7 @@ ul .btn-reservation:hover{
     display: flex;
     flex-direction: column;
     background-color: white;
-    /* opacity: 70%; */
+
     border-radius: 40px;
     padding: 90px;
     padding-left: 200px;
@@ -181,7 +178,7 @@ h1 {
 }
 
 .storytelling{
-    /* background-color: red; */
+
     display: flex;
     flex-direction: column;
 }
@@ -190,9 +187,9 @@ h1 {
     display: flex;
     align-items: center;
     padding: 80px 100px;
-    /* background-color: blue; */
+
     padding-bottom: 50px;
-    /* justify-content: space-between; */
+
     gap: 100px;
     margin-left: 200px;
     padding-left: 100px;
@@ -210,8 +207,7 @@ h1 {
     width: 40vw;
     text-align: left;
     margin-left: 20px;
-    /* margin-right: 20vw; */
-    /* background-color: aqua; */
+
 }
 
 .texte-story h2 {
@@ -246,7 +242,7 @@ h1 {
 
 .engage-items{
     text-align: center;
-    /* background-color: aqua; */
+
     padding-left: 14rem;
     padding-right: 4rem;
 }
@@ -265,7 +261,7 @@ h1 {
 .items{
     display: flex;
     width: 40vw;
-    /* justify-content: space-between; */
+
     gap: 100px;
     padding: 40px;
 
@@ -408,7 +404,7 @@ h1 {
     top: 200px;
 }
 
-/* RESPONSIVE - media queries */
+
 
 @media screen and (max-width: 320px){
 
@@ -575,7 +571,7 @@ h1 {
         top: 0;
 }
 
-}
+} */
 
 /* @media screen and (max-width: 768px){
 
