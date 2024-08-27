@@ -13,190 +13,199 @@
 
 <body>
     <!-- ******************************** MENU (fixe au scroll)******************************** -->
+
     <header> <!-- Background color full -->
-        <nav class="header-nav-accueil"> <!-- Barre de navigation fixe avec une transparence / flou d'arrière plan -->
-
-
-            <div class="logo-header">
-                <img src="IMG/LOGOS/logo_QDM.svg" alt="Logo du restaurant Le quai des Machines">
-            </div>
-
+        <nav class="header-nav"> <!-- Barre de navigation fixe avec une transparence / flou d'arrière plan -->
+            <img class="logo header-logo" src="IMG/LOGOS/logo_QDM.svg" alt="Logo du restaurant Le quai des Machines">
             <ul class="menu-nav">
-
                 <li><a href="">Accueil</a></li>
-                <li><a href="">En images</a></li>
+                <li><a href="">Notre histoire</a></li>
+                <li><a href="">Nos valeurs</a></li>
                 <li><a href="">A la carte</a></li>
-                <li><a href="">Contact et presse</a></li>
+                <li><a href="">Evènements</a></li>
+                <li><a href="">Contacts et accès</a></li>
                 <li><a class="btn-reservation" href="">Réserver en ligne</a></li>
-
             </ul>
         </nav>
+
         <!-- *************************** ACCUEIL *************************** -->
-        <section class="header-hero">
-            <!-- IMG en carousel ? -->
-            <!-- <img class="img-box" src="IMG/PICTURES/nantes-img.jpg" alt="ville de nantes"> -->
-            <!-- ICON engrenage qui tourne -->
-            <div class="header-hero-card">
-                <img class="engranage-1" src="IMG/ICON/engre_icon.svg" alt="engranage">
-                <h1>Un voyage inaugural culinaire <br> au cœur de Nantes !</h1>
 
-                <!-- ICON engrenage qui tourne -->
-                <img class="engranage-2" src="IMG/ICON/engre_icon.svg" alt="engrenage">
-                <button class="btn-poster">
-                    Télécharger l'affiche
-                </button>
-            </div>
-
-
-        </section>
+        <div class="header-hero">
+            <h1>Un voyage inaugural culinaire <br> au cœur de Nantes !</h1>
+        </div>
     </header>
 
-    <!-- ******************************** main NOTRE HISTOIRE / NOS ENGAGEMENTS ******************************** -->
-    <section class="storytelling">
-        <div class="story container">
+    <main>
 
-            <div class="img-story">
-                <img src="IMG/PICTURES/Restau/restau-1.jpg" alt="">
-            </div>
+        <!-- ******************************** main NOTRE HISTOIRE / NOS ENGAGEMENTS ******************************** -->
 
-            <div class="texte-story">
-                <h2>Notre histoire</h2>
-                <p>enim. ex elit. vitae non. dignissim, id porta Nullam Nunc sodales. non elementum elit.
-                    massa lobortis, commodo viverra quis enim. ex elit. vitae non. dignissim, id porta Nullam
-                    Nunc sodales. non elementum elit. massa lobortis, commodo viverra quis enim. ex elit. vitae non.
-                    dignissim, id porta Nullam Nunc sodales. non elementum elit. massa lobortis, commodo viverra quis
-                    enim. ex elit. vitae non. dignissim, id porta Nullam Nunc sodales.</p>
-            </div>
-
-        </div>
-
-        <div class="engage container grid">
-            <div class="engage-items">
-                <h2>Nos engagements</h2>
-
-                <div class="items">
-                    <div class="fav-center">
-                        <div class="favicon">
-                            <img src="IMG/ICON/cuisine_icon.svg" alt="" class="fav-un"></img>
+        <section class="sections storytelling">
+            <div class="story-container">
+                <div class="story-content">
+                    <h2>Notre histoire</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, mollitia. Voluptas quam libero
+                        iure explicabo animi perspiciatis laboriosam, odio voluptatum eos deleniti, ipsa aperiam, unde
+                        reiciendis cumque laborum placeat doloribus!
+                    </p>
+                </div>
+                <div>
+                    <img src="IMG/PICTURES/Restau/restau-6.webp" alt="">
+                </div>
+                <div class="valeur-content">
+                    <h2>Notre histoire</h2>
+                    <div class="valeur-content-items">
+                        <div class="valeur-item">
+                            <img src="IMG/ICON/bread-slice-solid.svg" alt="">
+                            <p></p>
                         </div>
-                        <h3>Cuisine <br> du jour</h3>
-                    </div>
-
-                    <div class="fav-center">
-                        <div class="favicon">
-                            <img src="IMG/ICON/leaf_icon.svg" alt="" class="fav-deux"></img>
+                        <div class="valeur-item">
+                            <img src="IMG/ICON/leaf-solid.svg" alt="">
+                            <p></p>
                         </div>
-                        <h3>Produits frais <br> et de saison</h3>
-                    </div>
-
-                    <div class="fav-center">
-                        <div class="favicon">
-                            <img src="IMG/ICON/pourcentage_icon.svg" alt="" class="fav-trois"></img>
+                        <div class="valeur-item">
+                            <img src="IMG/ICON/percent-solid.svg" alt="">
+                            <p></p>
                         </div>
-                        <h3>Programme <br> de fidélité</h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="IMG/PICTURES/Restau/restau-3.webp" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ************************** section A LA CARTE ->encadrer(div) la carte + arrondi ***************************** -->
+        
+        <section class="sections carte">
+            <div class="carte-container">
+                <div class="carte-content">
+                    <!-- IMG CSS BG -->
+                    <h2>Nos menus de la semaine (25 au 31 mars)</h2>
+                    <div class="carte-content-items">
+                        <div class="carte-item">
+                            <h3> Machine à Vapeur</h3>
+                            <p>Entrée :</p>
+                            <p></p>
+                            <p>Plat :</p>
+                            <p></p>
+                            <p>Dessert :</p>
+                            <p></p>
+                        </div>
+                        <div class="carte-item">
+                            <h3> Machine à Vapeur</h3>
+                            <p>Entrée :</p>
+                            <p></p>
+                            <p>Plat :</p>
+                            <p></p>
+                            <p>Dessert :</p>
+                            <p></p>
+                        </div>
+                        <div class="carte-item">
+                            <h3> Machine à Vapeur</h3>
+                            <p>Entrée :</p>
+                            <p></p>
+                            <p>Plat :</p>
+                            <p></p>
+                            <p>Dessert :</p>
+                            <p></p>
+                        </div>
+                        <div class="carte-item">
+                            <h3> Machine à Vapeur</h3>
+                            <p>Entrée :</p>
+                            <p></p>
+                            <p>Plat :</p>
+                            <p></p>
+                            <p>Dessert :</p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="img-engage">
-                <img src="IMG/PICTURES/Restau/restau-3.jpg" alt="">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ******************************** section A LA CARTE ->encadrer(div) la carte + arrondi ******************************** -->
-    <section class="alacarte">
-        <div class="global-container container">
-
-            <h2>Nos menus de la semaine (25 au 31 mars)</h2>
-
-            <div class="row">
-                <div class="column">
-                    <h3>Machine à Vapeur</h3>
-                    <p>
-                        <strong>Entrée :</strong> Velouté de Potiron au Parfum d'Automne <br>
-                        <strong>Plat :</strong> Filet de Poisson Steampunk et sa Confiture d'Algues <br>
-                        <strong>Dessert :</strong> Île Flottante en Forme de Nuage et Sauce Vanille Étoilée
-                    </p>
-                </div>
-
-                <div class="column">
-                    <h3>Invention Gourmande</h3>
-                    <p>
-                        <strong>Entrée :</strong> Salade Mécanique aux Saveurs Surprenantes <br>
-                        <strong>Plat :</strong> Rôti de Volaille aux Saveurs Révolutionnaires <br>
-                        <strong>Dessert :</strong> Tartelette aux Fruits Mécaniques et Crème Anglaise
-                    </p>
+        <section class="sections events">
+            <div class="events-content">
+                <h2>Evènements à venir</h2>
+                <h3>Inauguration du restaurant</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, mollitia. Voluptas quam libero
+                    iure explicabo animi perspiciatis laboriosam, odio voluptatum eos deleniti, ipsa aperiam, unde
+                    reiciendis cumque laborum placeat doloribus!
+                </p>
+                <div class="btn-container">
+                    <button class="btn-download" type="button">
+                        Télécharger l'affiche
+                    </button>
+                    <img src="IMG/ICON/download-solid.svg" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
-                    <h3>Création Fantastique</h3>
-                    <p>
-                        <strong>Entrée :</strong> Croustillants de Poulpe Mécanique et Sauce Océanique <br>
-                        <strong>Plat :</strong> Pavé de Steak Mécanique à l'Élixir de Terroir <br>
-                        <strong>Dessert :</strong> Fondant au Chocolat Stellaires et Glace au Caramel Cosmique
-                    </p>
+            <div>
+                <img src="IMG/PICTURES/Restau/restau-6.webp" alt="">
+            </div>
+        </section>
+
+        <section class="sections contacts">
+            <div class="contacts-content-items">
+                <div class="where-content">
+                    <h2>Où nous trouver :</h2>
+                    <div class="location-item">
+                        <img src="IMG/ICON/location-dot-solid.svg" alt="">
+                        <p>Parc des Chantiers, <br> Boulevard Léon Bureau <br>
+                            44200 Nantes
+                        </p>
+                    </div> 
                 </div>
-                <div class="column">
-                    <h3>Exploration Culinaire</h3>
-                    <p>
-                        <strong>Entrée :</strong> Escargots Farfelus à la Vapeur de Train <br>
-                        <strong>Plat :</strong> Cassolette de Légumes Futuristes au Gratin de Fromage <br>
-                        <strong>Dessert :</strong> Profiteroles à la Crème de Planètes et Caramel Spatial
-                    </p>
+                <div class="who-content">
+                    <h2>Nous contacter :</h2>
+                    <div class="contact-item">
+                        <img src="IMG/ICON/envelope-solid.svg" alt="">
+                        <p> contact@quaidesmachines.fr</p>
+                    </div> 
+                    <div>
+                        <img src="IMG/ICON/phone-solid.svg" alt="">
+                        <p> 06.75.79.99.00</p>
+                    </div> 
+                </div>
+                <div class="access-content">
+                    <h2>Accessibilité :</h2>
+                    <div class="access-item">
+                        <img src="IMG/ICON/wheelchair-move-solid.svg" alt="">
+                        <p>Le restaurant est accessible aux personnes à mobilité réduite.</p>
+                    </div> 
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ******************************** section A LA CARTE ->encadrer la carte + arrondi ********************************  -->
-    <!-- Background color full  -->
-    <article class="contact-access">
-        <div class="global-container2 container">
-
-            <div class="parent">
-                <div class="events">
-                    <h2> Evènements en cours</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing eit. <br> Praesentium, eos cupiditate tempore
-                        doloribus
-                        nulla eius id nisi incidunt et minima ab, est delectus laboriosam asperiores, <br> esse quod
-                        natus quis
-                        dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Debitis quas nemo
-                        possimus, aperiam
-                        deleniti labore optio, quisquam doloremque itaque tempora, enim voluptatum quidem iusto
-                        provident
-                        numquam laudantium adipisci velit obcaecati!</p>
-                </div>
-
-                <div class="droite">
-                    <div class="contact">
-                        <h2>Nous contacter</h2>
-                        <img src="IMG/ICON/mail_icon.svg" alt="" class="">
-                        <p>Téléphone : 06.75.79.99.00</p>
-                        <img src="IMG/ICON/tel_icon.svg" alt="">
-                        <p>Mail : contact@quaidesmachines.fr</p>
-                    </div>
-                    <div class="where">
-                        <h2>Où nous trouver</h2>
-                        <img src="IMG/ICON/map_icon.svg" alt="">
-                        <p>Addresse : 7 Avenue du Quai des Sables</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="img-map">
-                <img src="IMG/ICON/map_icon.svg" alt="" class="map-icon">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4828.760546495439!2d-1.5741020626754163!3d47.21560098061035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee81f0a8aead%3A0x40d37521e0ded30!2sNantes!5e0!3m2!1sfr!2sfr!4v1719301869488!5m2!1sfr!2sfr"
-                    width="1500" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="map-nantes">
-                </iframe>
-            </div>
-
-        </div>
-    </article>
+        </section>
+    </main>
 
     <footer>
+        <div class="footer-container">
+            <div class="footer-content-items">
+                <img class="logo footer-logo" src="IMG/LOGOS/logo_QDM.svg" alt="Logo du restaurant Le quai des Machines">
+                <p>
+                    Adresse : <br>
+                    Parc des Chantiers, <br>
+                    Boulevard Léon Bureau <br>
+                    44200 Nantes
+                </p>
+                <div class="réseaux-items">
+                    <img src="IMG/ICON/square-facebook-brands-solid.svg" alt="">
+                    <img src="IMG/ICON/square-instagram-brands-solid.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <ul class="footer-nav">
+                    <li><a href=""><strong>Accueil</strong></a></li>
+                    <li><a href="">Notre histoire</a></li>
+                    <li><a href="">Nos valeurs</a></li>
+                    <li><a href="">A la carte</a></li>
+                    <li><a href="">Evènements</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+
+        </div>
         <small>Copyright Jesse</small>
     </footer>
 
