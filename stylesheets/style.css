@@ -37,6 +37,9 @@ button, input, textarea {
     --text-sec-color: #FFFF;
     --text-basic-color: #000;
 
+    /* Le 0.8 du rgba gère l'opacité c'est pratique ! */
+    --opacity: rgba(9, 23, 41, 0.8);
+
 
     /* VARIABLE DESKTOP TEXTE */
     --title-h1:4rem;
@@ -52,6 +55,8 @@ button, input, textarea {
     --r-title-footer:1rem;
     --r-text-labeur:1rem;
 
+    --light: 300;
+
     --regular: 400;
 
     --semi-bold: 600;
@@ -64,13 +69,24 @@ button, input, textarea {
     --text-police: "Nunito", sans-serif;
 }
 
+li{
+    list-style: none;
+}
 
+a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--title-police);
+}
 
 body{
-    font-family: var(--police);
-    font-size: var(--text-corps);
+    font-family: var(--title-police);
+    font-family: var(--text-police);
     line-height: var(--interligne);
+    background-color: var(--bg-color);
 }
+
+
 
 /* MOBILE FIRST : 480px */
 
@@ -94,4 +110,95 @@ p{
     font-family: var(--text-police);
     font-size: var(--r-text-labeur);
     line-height: var(--interligne);
+}
+
+/* HEADER - ACCUEIL */
+
+header{
+    background-image: url(../IMG/PICTURES/nantes-img.webp);
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 26.4em;
+    
+}
+
+.header-nav{
+    background-color: var(--opacity);
+    width: 45%;
+    height: auto;
+    position:fixed;
+    z-index: 10;
+    padding: 1.875em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo{
+    width: 100px;
+    margin: 0.3em;
+}
+
+.menu-nav li{
+    padding: 0.3em;
+}
+
+.header-hero{
+    height: 10em;
+    padding: 1.875em;
+}
+
+h1{
+    background-color: var(--opacity);
+    position: absolute;
+    bottom: 8em;
+    width: 80%;
+    padding: 1em;
+}
+
+
+
+
+
+
+/* SECTION STORYTELLING */
+
+.sections{
+    margin-left: 1.875em;
+    margin-right: 1.875em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.story-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.story-content h2, p{
+    padding-bottom: 0.6255em;
+}
+
+.valeur-content h2{
+    padding-bottom: 0.6255em;
+}
+
+.valeur-content-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.valeur-item img{
+    align-items: center;
+    width: 80px;
+}
+
+.valeur-item p{
+    text-align: center;
+}
+
+
+.last-trois img{
+    width: 65px;
 }
