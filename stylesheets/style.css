@@ -71,11 +71,18 @@ button, input, textarea {
     --text-police: "Nunito", sans-serif;
 
 
-/* VARIABLES MONBILE / MARGIN - PADDING */
+/* VARIABLES MOBILE / MARGIN - PADDING */
+    --r-ml-r: 1.875em;
+    --r-mt-b: 1.25em;
+    --r-pb: 0.6255em;
 
+/* VARIABLES TABLET / MARGIN - PADDING */
+    --t-ml-r: 6em;
+    --t-mt-b: 1.25em;
 
 /* VARIABLES DESKTOP / MARGIN - PADDING */
-
+    --d-ml-r: 4em;
+    --d-mt-b: 1.25em;
 
 }
 
@@ -126,6 +133,7 @@ p{
 
 header{
     background-image: url(../IMG/PICTURES/nantes-img.webp);
+    background-size: none;
     /* background-color: aquamarine; */
     width: 100%;
     height: 26.4em;
@@ -216,11 +224,11 @@ h1{
 
 /**** GLOBAL SECTIONS MOBILE s'applique à toutes les sections ****/
 .sections{
-    margin-left: 1.875em;
-    margin-right: 1.875em;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
-    padding-bottom: 0.6255em;
+    margin-left: var(--r-ml-r);
+    margin-right: var(--r-ml-r);
+    margin-top: var(--r-mt-b);
+    margin-bottom: var(--r-mt-b);
+    padding-bottom: var(--r-pb);
 }
 /**** END GLOBAL SECTIONS MOBILE ****/
 
@@ -244,9 +252,9 @@ h1{
     flex-direction: column;
 }
 .valeur-content{
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
-    padding-bottom: 0.6255em;
+    margin-top: var(--r-mt);
+    margin-bottom: var(--r-mb);
+    padding-bottom: var(--r-pb);
 }
 
 .valeur-content h2{
@@ -272,10 +280,10 @@ h1{
 @media screen and (min-width: 768px){
 /**** GLOBAL SECTIONS TABLET s'applique à toutes les sections ****/
     .sections{
-        margin-left: 6em;
-        margin-right: 6em;
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
+        margin-left: var(--t-ml-r);
+        margin-right: var(--t-ml-r);
+        margin-top: var(--t-mt-b);
+        margin-bottom: var(--t-mt-b);
     }
 /**** END GLOBAL SECTIONS TABLET ****/
 }
@@ -284,10 +292,10 @@ h1{
 @media screen and (min-width: 1024px){
 /**** GLOBAL SECTIONS DESKTOP s'applique à toutes les sections ****/
     .sections{
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+    margin-left: var(--d-ml-r);
+    margin-right: var(--d-ml-r);
+    margin-top: var(--d-mt-b);
+    margin-bottom: var(--d-mt-b);
     }
 /**** END GLOBAL SECTIONS DESKTOP ****/
     .story-container{
@@ -324,18 +332,81 @@ h1{
 /*********** SECTION CARTE **********/
 
 .carte{
-    background-image: url(..IMG/PICTURES/food/food_3.webp);
-    background-color: aquamarine;
+    background-image: url(../IMG/PICTURES/food/food_10.webp);
+    /* background-color: aquamarine; */
+    background-size: cover;
     width: 100%;
     height: auto;
 }
 
 .carte-container{
+    background-color: var(--opacity);
     display: flex;
     flex-direction: column;
+}
+.carte-content{
+    width: 100%;
+    margin-left: var(--r-ml-r);
+    margin-right: var(--r-ml-r);
+    margin-top: var(--r-mt-b);
+    margin-bottom: var(--r-mt-b);
+    padding-bottom: var(--r-pb);
+    color: var(--white);
+}
+.carte-content h2{
+    padding-bottom: 1em;
 }
 
 .carte-content-items{
     display: flex;
     flex-direction: column;
+    padding-bottom: var(--r-pb);
+}
+
+.carte-item{
+    padding-bottom: var(--r-pb);
+}
+
+.carte-item h3{
+    padding-bottom: var(--r-pb);
+}
+strong{
+    text-decoration: underline;
+}
+
+/* SECTION CARTE -----TABLET */
+@media screen and (min-width: 768px){
+    .carte-container{
+        margin-right: var(--t-ml-r);
+    }
+    .carte-content{
+        margin-left: var(--t-ml-r);
+        margin-right: var(--t-ml-r);
+        margin-top: var(--t-mt-b);
+        margin-bottom: var(--t-mt-b);
+        padding-bottom: var(--r-pb);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .carte-container{
+        margin-right: var(--d-ml-r);
+    }
+    .carte-content{
+        margin-left: var(--d-ml-r);
+        margin-right: var(--d-ml-r);
+        margin-top: var(--d-mt-b);
+        margin-bottom: var(--d-mt-b);
+        padding-bottom: var(--r-pb);
+    }
+    .carte-content-items{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+    .carte-item{
+        padding-bottom: var(--r-pb);
+        text-wrap: pretty;
+    }
 }
