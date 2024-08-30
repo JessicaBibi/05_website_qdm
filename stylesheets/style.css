@@ -70,6 +70,9 @@ button, input, textarea {
     --title-police: "Inter", sans-serif;
     --text-police: "Nunito", sans-serif;
 
+    /* ICON ITEMS */
+    --r-icon: 25px;
+
 
 /* VARIABLES MOBILE / MARGIN - PADDING */
     --r-ml-r: 1.875em;
@@ -301,6 +304,9 @@ h1{
         margin-bottom: var(--t-mt-b);
     }
 /**** END GLOBAL SECTIONS TABLET ****/
+    .valeur-content-items{
+        justify-content: space-around;
+    }
 }
 
 /****** SECTION STORYTELLING ------DESKTOP */
@@ -469,7 +475,7 @@ strong{
 }
 
 .btn-container img{
-    width: 25px;
+    width: var(--r-icon);
     fill: var(--white);
     margin-left: 1em;
 }
@@ -482,6 +488,65 @@ button{
     padding: 20px;
 }
 
-@media screen and (min-width: 768px){
-    
+@media screen and (min-width: 1024px){
+
+}
+
+/*********** SECTION CONTACTS **********/
+
+.contacts-content-items{
+    background-color: var(--opacity);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    padding: var(--r-ml-r);
+}
+
+.where-content{
+    color: var(--white);
+    padding-bottom: var(--r-pb);
+}
+.location-item{
+    display: flex;
+    color: var(--white);
+}
+.location-item img{
+    width: var(--r-icon);
+}
+.who-content h2{
+    color: var(--white);
+    padding-bottom: var(--r-pb);
+}
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+}
+.contact-item img{
+    width: var(--r-icon);
+}
+.tel-item{
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+}
+.tel-item img{
+    width: var(--r-icon);
+}
+.access-content{
+    color: var(--white);
+    padding-bottom: var(--r-pb);
+}
+.access-item{
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+}
+.access-item img{
+    width: var(--r-icon);
+}
+iframe{
+    position: relative;
+    z-index: 1;
 }
