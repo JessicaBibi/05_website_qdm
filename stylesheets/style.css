@@ -136,7 +136,6 @@ header{
     /* background-color: aquamarine; */
     width: 100%;
     height: 26.4em;
-    margin: 0;
 }
 
 .header-nav{
@@ -152,7 +151,7 @@ header{
 
 .header-logo{
     width: 80px;
-    margin: 0.3em;
+    padding: 0.3em;
 }
 
 .menu-nav{
@@ -182,7 +181,7 @@ h1{
 @media screen and (min-width: 768px){
 
     .header-logo, .menu-nav{
-        margin-left: 4em;
+        padding-left: 4em;
     }
     .header-hero{
         padding: 0;
@@ -198,14 +197,14 @@ h1{
         flex-direction: row;
     }
     .header-logo, .menu-nav{
-        margin-left: 2em;
+        padding-left: 2em;
     }
     .header-logo {
         width: 100px;
     }
     .header-hero{
         padding: 0;
-        margin-right: 4em;
+        padding-right: 4em;
     }
     .header-hero p{
         text-align: center;
@@ -223,8 +222,8 @@ h1{
 
 /**** GLOBAL SECTIONS MOBILE s'applique à toutes les sections ****/
 .sections{
-    margin-left: var(--r-ml-r);
-    margin-right: var(--r-ml-r);
+    padding-left: var(--r-ml-r);
+    padding-right: var(--r-ml-r);
     margin-top: var(--r-mt-b);
     margin-bottom: var(--r-mt-b);
     padding-bottom: var(--r-pb);
@@ -279,8 +278,8 @@ h1{
 @media screen and (min-width: 768px){
 /**** GLOBAL SECTIONS TABLET s'applique à toutes les sections ****/
     .sections{
-        margin-left: var(--t-ml-r);
-        margin-right: var(--t-ml-r);
+        padding-left: var(--t-ml-r);
+        padding-right: var(--t-ml-r);
         margin-top: var(--t-mt-b);
         margin-bottom: var(--t-mt-b);
     }
@@ -291,8 +290,8 @@ h1{
 @media screen and (min-width: 1024px){
 /**** GLOBAL SECTIONS DESKTOP s'applique à toutes les sections ****/
     .sections{
-    margin-left: var(--d-ml-r);
-    margin-right: var(--d-ml-r);
+    padding-left: var(--d-ml-r);
+    padding-right: var(--d-ml-r);
     margin-top: var(--d-mt-b);
     margin-bottom: var(--d-mt-b);
     }
@@ -346,8 +345,8 @@ h1{
 }
 .carte-content{
     width: 100%;
-    margin-left: var(--r-ml-r);
-    margin-right: var(--r-ml-r);
+    padding-left: var(--r-ml-r);
+    padding-right: var(--r-ml-r);
     margin-top: var(--r-mt-b);
     margin-bottom: var(--r-mt-b);
     padding-bottom: var(--r-pb);
