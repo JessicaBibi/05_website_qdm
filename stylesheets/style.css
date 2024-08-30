@@ -179,12 +179,29 @@ h1{
 
 /* HEADER - TABLET -------------- */
 @media screen and (min-width: 768px){
-
+    header {
+        height: 30em;
+    }
+    .header-nav{
+        width: auto;
+        padding-right: var(--t-ml-r);
+        padding-left: var(--t-ml-r);
+    }
+    .header-logo{
+        width: 100px;
+    }
     .header-logo, .menu-nav{
-        padding-left: 4em;
+        
+        height: auto;
+    }
+    li a{
+        font-size: 1.5rem;
     }
     .header-hero{
         padding: 0;
+    }
+    .header-hero h1{
+        padding-left: var(--t-ml-r);
     }
 }
 
@@ -380,8 +397,8 @@ strong{
         margin-right: var(--t-ml-r);
     }
     .carte-content{
-        margin-left: var(--t-ml-r);
-        margin-right: var(--t-ml-r);
+        padding-left: var(--t-ml-r);
+        padding-right: var(--t-ml-r);
         margin-top: var(--t-mt-b);
         margin-bottom: var(--t-mt-b);
         padding-bottom: var(--r-pb);
@@ -389,12 +406,33 @@ strong{
 }
 
 @media screen and (min-width: 1024px){
+    .header-nav{
+        padding-right: 1.5em;
+        justify-content: flex-end;
+        align-content: space-between;
+    }
+    .header-logo, .menu-nav{
+        padding-left: var(--d-ml-r);
+    }
+    .header-logo {
+        width: 150px;
+    }
+    .menu-nav {
+        gap: 15px;
+        align-items: center;
+    }
+    .menu-nav li{
+        padding: 0;
+    }
+    .menu-nav li a{
+        font-size: 1rem;
+    }
     .carte-container{
         margin-right: var(--d-ml-r);
     }
     .carte-content{
-        margin-left: var(--d-ml-r);
-        margin-right: var(--d-ml-r);
+        padding-left: var(--d-ml-r);
+        padding-right: var(--d-ml-r);
         margin-top: var(--d-mt-b);
         margin-bottom: var(--d-mt-b);
         padding-bottom: var(--r-pb);
@@ -405,6 +443,45 @@ strong{
     }
     .carte-item{
         padding-bottom: var(--r-pb);
-        text-wrap: pretty;
     }
+}
+
+/*********** SECTION EVENEMENT **********/
+
+.events{
+    margin-bottom: var(--r-mt-b);
+
+}
+.events-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--r-mt-b);
+}
+.events-content h2, h3, p{
+    padding-bottom: var(--r-pb);
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    padding-top: var(--r-pb);
+}
+
+.btn-container img{
+    width: 25px;
+    fill: var(--white);
+    margin-left: 1em;
+}
+
+button{
+    background-color: var(--main-color);
+    font-family: var(--title-police);
+    font-size: var(--r-text-labeur);
+    color: var(--white);
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px){
+    
 }
