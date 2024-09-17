@@ -115,7 +115,7 @@ h1 {
     font-family: var(--h1);
     font-size: var(--r-title-h1);
     color: var(--white);
-    width: ;
+    width: 100%;
 }
 
 h2{
@@ -176,7 +176,7 @@ header{
 h1{
     background-color: var(--opacity);
     position: absolute;
-    bottom: 50%;
+    top: 18%;
     width: 95%;       
     padding: 0;
     text-align: center;
