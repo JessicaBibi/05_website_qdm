@@ -251,7 +251,32 @@ header{
     padding-bottom: var(--r-pb);
 }
 /**** END GLOBAL SECTIONS MOBILE ****/
+.valeur-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--r-mt);
+    margin-bottom: var(--r-mb);
+    padding-bottom: var(--r-pb);
+}
 
+.valeur-content h2{
+    padding-bottom: 0.6255em;
+}
+
+.valeur-content-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.valeur-item img{
+    align-items: center;
+    width: 80px;
+}
+
+.valeur-item p{
+    text-align: center;
+}
 .story-container{
     display: flex;
     flex-direction: column;
@@ -267,34 +292,7 @@ header{
     padding-bottom: 0.6255em;
 }
 
-.valeur-container{
-    display: flex;
-    flex-direction: column;
-}
-.valeur-content{
-    margin-top: var(--r-mt);
-    margin-bottom: var(--r-mb);
-    padding-bottom: var(--r-pb);
-}
 
-.valeur-content h2{
-    padding-bottom: 0.6255em;
-}
-
-.valeur-content-items{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.valeur-item img{
-    align-items: center;
-    width: 80px;
-}
-
-.valeur-item p{
-    text-align: center;
-}
 
 /* SECTION STORYTELLING -----TABLET */
 /* @media screen and (min-width: 768px){ */
