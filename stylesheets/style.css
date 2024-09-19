@@ -267,6 +267,7 @@ header{
 .valeur-content-items{
     display: flex;
     justify-content: space-between;
+    gap: 4em;
 }
 
 .valeur-item img{
@@ -280,12 +281,13 @@ header{
 .story-container{
     display: flex;
     flex-direction: column;
+
 }
 
 .story-content{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .story-content h2, p{
@@ -295,19 +297,16 @@ header{
 
 
 /* SECTION STORYTELLING -----TABLET */
-/* @media screen and (min-width: 768px){ */
+@media screen and (min-width: 768px){
 /**** GLOBAL SECTIONS TABLET s'applique à toutes les sections ****/
-    /* .sections{
+    .sections{
         padding-left: var(--t-ml-r);
         padding-right: var(--t-ml-r);
         margin-top: var(--t-mt-b);
         margin-bottom: var(--t-mt-b);
-    } */
-/**** END GLOBAL SECTIONS TABLET ****/
-    /* .valeur-content-items{
-        justify-content: space-around;
     }
-} */
+/**** END GLOBAL SECTIONS TABLET ****/
+}
 
 /****** SECTION STORYTELLING ------DESKTOP */
 /* @media screen and (min-width: 1024px){ */
@@ -461,6 +460,7 @@ strong{
 .events-content{
     display: flex;
     flex-direction: column;
+    
     margin-bottom: var(--r-mt-b);
 }
 .events-content h2, h3, p{
