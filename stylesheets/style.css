@@ -87,6 +87,7 @@ button, input, textarea {
 /* VARIABLES DESKTOP / MARGIN - PADDING */
     --d-ml-r: 4em;
     --d-mt-b: 1.25em;
+    --d-pb: 1em;
 
 }
 
@@ -115,7 +116,7 @@ h1 {
     font-family: var(--h1);
     font-size: var(--r-title-h1);
     color: var(--white);
-    width: 100%;
+    max-width: 100%;
 }
 
 h2{
@@ -180,7 +181,7 @@ header{
 
 
 /* HEADER - TABLET -------------- */
-/* @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     header {
         height: 30em;
     }
@@ -203,9 +204,11 @@ header{
         padding: 0;
     }
     .header-hero h1{
-        padding-left: var(--t-ml-r);
+        padding: 1em;
+        font-size: 2.75rem;
+        top: 4%;
     }
-} */
+}
 
 /* HEADER - Desktops and laptops ----------- */
 @media screen and (min-width: 1024px){
@@ -230,13 +233,14 @@ header{
         width: 100%;
         padding-top: 1em;
         padding-bottom: 1em;
+        top: 10%;
     }
     .menu-nav{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 16px;
     }
+
 }
 
 
@@ -309,7 +313,7 @@ header{
 }
 
 /****** SECTION STORYTELLING ------DESKTOP */
-/* @media screen and (min-width: 1024px){ */
+@media screen and (min-width: 1024px){
 /**** GLOBAL SECTIONS DESKTOP s'applique à toutes les sections ****/
     /* .sections{
     padding-left: var(--d-ml-r);
@@ -318,36 +322,17 @@ header{
     margin-bottom: var(--d-mt-b);
     } */
 /**** END GLOBAL SECTIONS DESKTOP ****/
-    /* .story-container{
-        flex-direction: row;
-        padding-bottom: 0.6255em;
-        gap: 20px;
+    .story-container{
+        align-items: center;
     }
-    .story-content{
-        width: 50%;
+    .story-content p{
+        width: 80%;
     }
-    .story-img{
-        width: 50%;
-    }
-    .valeur-container{
-        flex-direction: row;
-        padding-bottom: 0.6255em;
-        gap: 20px;
-    }
-    .valeur-content{
-        width: 50%;
-        align-items: start;
-        padding-right: 4em;
-        margin-top: 0;
-    }
-    .valeur-img{
-        width: 50%;
-    }
-    .valeur-img img{
+    .story-img img{
         width: 100%;
-        height: 15em;
+        height: 20em;
     }
-} */
+}
 
 /*********** SECTION CARTE **********/
 
@@ -397,59 +382,37 @@ strong{
 }
 
 /* SECTION CARTE -----TABLET */
-/* @media screen and (min-width: 768px){
-    .carte-container{
-        margin-right: var(--t-ml-r);
-    }
-    .carte-content{
-        padding-left: var(--t-ml-r);
-        padding-right: var(--t-ml-r);
-        margin-top: var(--t-mt-b);
-        margin-bottom: var(--t-mt-b);
-        padding-bottom: var(--r-pb);
-    }
-} */
+@media screen and (min-width: 768px){
+}
 
-/* @media screen and (min-width: 1024px){
-    .header-nav{
-        padding-right: 1.5em;
-        justify-content: flex-end;
-        align-content: space-between;
-    }
-    .header-logo, .menu-nav{
-        padding-left: var(--d-ml-r);
-    }
-    .header-logo {
-        width: 150px;
-    }
-    .menu-nav {
-        gap: 15px;
-        align-items: center;
-    }
-    .menu-nav li{
-        padding: 0;
-    }
-    .menu-nav li a{
-        font-size: var(--text-labeur);
-    }
+@media screen and (min-width: 1024px){
     .carte-container{
-        margin-right: var(--d-ml-r);
+        align-items: center;
     }
     .carte-content{
         padding-left: var(--d-ml-r);
         padding-right: var(--d-ml-r);
-        margin-top: var(--d-mt-b);
-        margin-bottom: var(--d-mt-b);
-        padding-bottom: var(--r-pb);
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .carte-content h2{
+        text-align: center;
+        padding: 2em;
     }
     .carte-content-items{
         flex-direction: row;
         gap: 20px;
     }
     .carte-item{
-        padding-bottom: var(--r-pb);
+        padding-bottom: var(--d-pb);
     }
-} */
+    .carte-item p{
+        line-height: 1.5em;
+        padding: 1em;
+        
+    }
+}
 
 /*********** SECTION EVENEMENT **********/
 
@@ -460,7 +423,6 @@ strong{
 .events-content{
     display: flex;
     flex-direction: column;
-    
     margin-bottom: var(--r-mt-b);
 }
 .events-content h2, h3, p{
@@ -488,9 +450,19 @@ button{
     padding: 20px;
 }
 
-/* @media screen and (min-width: 1024px){
-
-} */
+@media screen and (min-width: 1024px){
+    .events-content{
+        align-items: center;
+    }
+    .events-content p{
+        width: 80%;
+    }
+    .event-img img{
+        width: 100%;
+        fill: var(--white);
+        margin-left: 1em;
+    }
+}
 
 /*********** SECTION CONTACTS **********/
 
@@ -556,6 +528,13 @@ iframe{
     width: 100%;
 }
 
+/* SECTION CARTE -----TABLET */
+@media screen and (min-width: 768px){
+    .contacts-content-items{
+        right: 25%;
+        left: 25%;
+    }
+}
 
 /*********** FOOTER **********/
 
