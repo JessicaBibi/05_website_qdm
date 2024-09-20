@@ -474,52 +474,20 @@ button{
     z-index: 3;
     padding: var(--r-ml-r);
 }
-
-.where-content{
+.content h2{
+    padding-bottom: var(--r-pb);
+}
+.content{
     color: var(--white);
     padding-bottom: var(--r-pb);
 }
-.location-item{
+.items-contacts{
     display: flex;
     color: var(--white);
     gap: 1em;
+    padding-bottom: 1em;
 }
-.location-item img{
-    width: var(--r-icon);
-}
-.who-content h2{
-    color: var(--white);
-    padding-bottom: var(--r-pb);
-}
-.contact-item{
-    display: flex;
-    flex-direction: row;
-    color: var(--white);
-    gap: 1em;
-}
-.contact-item img{
-    width: var(--r-icon);
-}
-.tel-item{
-    display: flex;
-    flex-direction: row;
-    color: var(--white);
-    gap: 1em;
-}
-.tel-item img{
-    width: var(--r-icon);
-}
-.access-content{
-    color: var(--white);
-    padding-bottom: var(--r-pb);
-}
-.access-item{
-    display: flex;
-    flex-direction: row;
-    color: var(--white);
-    gap: 1em;
-}
-.access-item img{
+.content img{
     width: var(--r-icon);
 }
 iframe{
@@ -579,7 +547,7 @@ footer{
     text-align: center;
 }
 
-/* SECTION CARTE -----TABLET */
+/* SECTION CARTE -----DESKTOP */
 @media screen and (min-width: 1024px){
     .footer-container{
         display: flex;
@@ -594,14 +562,8 @@ footer{
         margin-left: 0;
         margin-right: 0;
     }
-    .footer-nav{
-        padding-top: 2.5em;
-    }
     .footer-nav li{
         padding-top: 1em;
         text-align: left;
-    }
-    .menu-legal li{
-        width: 50%;
     }
 }
