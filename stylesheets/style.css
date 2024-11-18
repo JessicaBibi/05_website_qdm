@@ -35,24 +35,32 @@ button, input, textarea {
 
     --main-color: #091729;
     --bg-color: #FFF7ED;
+    --gold: #daa702;
     --white: #FFFF;
     --black: #000;
 
     /* Le 0.8 du rgba gère l'opacité c'est pratique ! */
     --opacity: rgba(9, 23, 41, 0.88);
 
+    /* Titre principal */
+    --font-size-title: clamp(2.5rem, 5vw, 3em); 
+    /* Titre des cartes */
+    --font-size-second-title: clamp(1.5rem, 3vw, 1.8em);
+    
+    /* Texte corps */
+    --font-size-body: clamp(1rem, 2.5vw, 1.1em);
 
     /* VARIABLE DESKTOP TEXTE */
-    --title-h1:2rem;
+    /* --title-h1:2rem;
     --title-h2:1.75rem;
     --title-h3:1.5rem;
     --title-footer:1.25rem;
-    --text-labeur:1rem;
+    --text-labeur:1rem; */
 
     /* VARIABLE MOBILE TEXTE */
-    --r-title-h2:1.5rem;
+    /* --r-title-h2:1.5rem;
     --r-title-h3:1.25rem;
-    --r-title-footer:1rem;
+    --r-title-footer:1rem; */
 
     --light: 300;
 
@@ -145,15 +153,14 @@ button {
 
 h1 {
     font-family: var(--title-police);
-    font-size: var(--title-h1);
+    font-size: var(--font-size-title);
     color: var(--white);
-    max-width: 80%;
-    line-height: 1.5em;
+    line-height: 1.8;
 }
 
 h2{
     font-family: var(--h1);
-    font-size: var(--r-title-h2);
+    font-size: var(--font-size-second-title);
     text-align: center;
 }
 
@@ -165,7 +172,7 @@ h3{
 
 p{
     font-family: var(--text-police);
-    font-size: var(--text-labeur);
+    font-size: var(--font-size-body);
     line-height: var(--interligne);
     text-align: center;
 }
@@ -212,13 +219,10 @@ header{
     padding: 1.875em;
     width: 100%;
     position: absolute;
-    top: 15%;
+    top: 10%;
 }
 
 .header-hero h1{
-    height: auto;
-    /* position: absolute; */
-    width: 100%;
     padding: 0;
     text-align: center;
 }
@@ -326,7 +330,7 @@ header{
 strong{
     font-weight: var(--semi-bold);
     line-height: 3em;
-    color: #FFD700;
+    color: var(--gold);
 }
 
 /*********** SECTION EVENEMENT **********/
