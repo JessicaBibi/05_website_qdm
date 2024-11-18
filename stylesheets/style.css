@@ -283,14 +283,19 @@ header{
 
 .carte-item{
     padding-bottom: var(--r-pb);
+    text-align: center;
+    border: 1px solid #FFF7ED;
+    border-radius: 1em;
+    margin: 1em;
+    
 }
 
 .carte-item h3{
     padding-bottom: var(--r-pb);
 }
 strong{
-    text-decoration: underline;
     font-weight: var(--semi-bold);
+    line-height: 3em;
 }
 
 /*********** SECTION EVENEMENT **********/
