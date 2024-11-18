@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding: 10em 0 0 0;
 }
 
 html, body {
@@ -285,18 +286,19 @@ header{
 .carte-item{
     padding-bottom: var(--r-pb);
     text-align: center;
-    border: 1px solid #FFF7ED;
+    border: 0.02px solid #FFF7ED;
     border-radius: 1em;
     margin: 1em;
     
 }
 
 .carte-item h3{
-    padding-bottom: var(--r-pb);
+    padding-top: var(--r-pb);
 }
 strong{
     font-weight: var(--semi-bold);
     line-height: 3em;
+    color: #FFD700;
 }
 
 /*********** SECTION EVENEMENT **********/
