@@ -64,9 +64,9 @@ button, input, textarea {
 
     --interligne: 1.5em;
 
-    --h1: "Playfair", serif;
-    --title-police: "Nunito", sans-serif;
-    --text-police: "Inter", sans-serif;
+    --title-police: "Playfair", serif;
+    --text-police: "Nunito", sans-serif;
+
 
     /* ICON ITEMS */
     --r-icon: 25px;
@@ -144,26 +144,30 @@ button {
 /* MOBILE FIRST : 480px */
 
 h1 {
-    font-family: var(--h1);
-    font-size: var(--r-title-h1);
+    font-family: var(--title-police);
+    font-size: var(--title-h1);
     color: var(--white);
-    max-width: 100%;
+    max-width: 80%;
+    line-height: 1.5em;
 }
 
 h2{
-    font-family: var(--title-police);
+    font-family: var(--h1);
     font-size: var(--r-title-h2);
+    text-align: center;
 }
 
 h3{
     font-family: var(--title-police);
     font-size: var(--r-title-h3);
+    text-align: center;
 }
 
 p{
     font-family: var(--text-police);
     font-size: var(--text-labeur);
     line-height: var(--interligne);
+    text-align: center;
 }
 
 /* HEADER - ACCUEIL */
