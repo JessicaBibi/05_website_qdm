@@ -85,7 +85,6 @@ button, input, textarea {
     --d-ml-r: 4em;
     --d-mt-b: 1.25em;
     --d-pb: 2em;
-
 }
 
 /**** GLOBAL CSS Part 2 ****/
@@ -104,6 +103,31 @@ a:hover{
     opacity: 80%;
     text-decoration: underline;
     color: var(--white);
+}
+
+.btn-reservation{
+    border: 1px solid #FFF7ED;
+    border-radius: 2em;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn-reservation span:hover{
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.btn-reservation span:after{
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-reservation:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 body{
